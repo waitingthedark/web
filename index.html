@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content:center;
+            height: 100vh;
+            background: linear-gradient(125deg, red, orange, yellow, green, blue, purple, black); 
+            background-size: 500%;
+            animation: move 10s linear infinite alternate;
+        }
+        input {
+            outline: none;
+        }
+
+        li {
+            list-style: none;
+        }
+        div {
+            width: 255px;
+            height: 100px; 
+            background-color: transparent;
+        }
+
+        @keyframes move {
+            0% {
+                background-position: 0 50%;
+            }
+
+            50% {
+                background-position: 50% 50%;
+            }
+            
+            100% {
+                background-position: 100% 50%;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div>   
+        <ul>
+            <li><label for="name">姓名:</label><input type="text" name="" id="name" value="唐**"></li>
+            <li><label for="number">学号:</label><input type="text" name="" id="number" value="20*******7"></li>
+            <li><label for="hobby">爱好:</label><input type="text" name="" id="hobby" value="看电视,上网,游戏"></li>
+        </ul>
+    </div>
+    
+</body>
+</html>
